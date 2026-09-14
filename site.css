@@ -1,0 +1,369 @@
+/* ==============================
+   bioSite - Global Styles
+   ============================== */
+
+/* Color Palette
+   Cream: #F7F3E8
+   Sage: #A8B89A
+   Forest Green: #3F5A45
+   Earthy Brown: #6B4F3A
+   Dark Brown: #302A24
+   White: #FFFFFF
+*/
+
+/* ==============================
+   Base / Atomic Styles
+   ============================== */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    background-color: #F7F3E8;
+    color: #302A24;
+    font-family: Georgia, "Times New Roman", serif;
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    color: #3F5A45;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #6B4F3A;
+}
+
+/* ==============================
+   Typography
+   ============================== */
+
+h1,
+h2,
+h3 {
+    margin-top: 0;
+    color: #3F5A45;
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
+}
+
+h3 {
+    font-size: 1.35rem;
+    margin-bottom: 0.5rem;
+}
+
+p {
+    max-width: 65ch;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+/* ==============================
+   Header & Navigation
+   ============================== */
+
+header {
+    background-color: #3F5A45;
+    padding: 1rem 2rem;
+}
+
+nav {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+nav a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 1.05rem;
+    letter-spacing: 0.03em;
+    transition: color 0.2s ease;
+}
+
+nav a:hover {
+    color: #A8B89A;
+}
+
+/* ==============================
+   Main Content
+   ============================== */
+
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+}
+
+section {
+    margin-bottom: 3rem;
+}
+
+/* ==============================
+   Content Blocks
+   ============================== */
+
+section > div {
+    background-color: #FFFFFF;
+    border-left: 4px solid #A8B89A;
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+section > div h3 {
+    color: #6B4F3A;
+}
+
+/* ==============================
+   Footer
+   ============================== */
+
+footer {
+    background-color: #6B4F3A;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 1.25rem 2rem;
+    margin-top: 3rem;
+}
+
+footer p {
+    max-width: none;
+    margin: 0;
+}
+
+/* ==============================
+   Hero Section
+   ============================== */
+
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.hero-image {
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.hero img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 8px;
+    transform: scale(1.15);
+}
+
+.hero-content {
+    padding: 2rem;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.15rem;
+}
+
+/* ==============================
+   Image Captions
+   ============================== */
+
+.image-container {
+    margin: 0;
+}
+
+.image-container img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.image-container figcaption {
+    color: #6B4F3A;
+    font-size: 0.9rem;
+    font-style: italic;
+    margin-top: 0.5rem;
+}
+
+/* ==============================
+   Content Cards
+   ============================== */
+
+.card {
+    background-color: #FFFFFF;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(48, 42, 36, 0.12);
+}
+
+.card h2,
+.card h3 {
+    color: #3F5A45;
+}
+
+/* ==============================
+   Buttons / Navigation Links
+   ============================== */
+
+.button {
+    display: inline-block;
+    background-color: #3F5A45;
+    color: #FFFFFF;
+    padding: 0.7rem 1.2rem;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 0.5rem;
+}
+
+.button:hover {
+    background-color: #6B4F3A;
+    color: #FFFFFF;
+}
+/* ==============================
+   About Page
+   ============================== */
+
+.about-intro,
+.about-section,
+.hobby-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.about-intro {
+    margin-bottom: 4rem;
+}
+
+.about-intro img,
+.about-section img,
+.hobby-section img {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+
+/* ==============================
+   Hobbies Page
+   ============================== */
+
+.hobbies-intro {
+    text-align: center;
+    max-width: 750px;
+    margin: 0 auto 4rem;
+}
+
+.hobbies-intro p {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hobby-section {
+    margin-bottom: 4rem;
+}
+
+.hobbies-extra {
+    background-color: #FFFFFF;
+    border-left: 4px solid #A8B89A;
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+/* ==============================
+   Figure Styling
+   ============================== */
+
+figure.image-container {
+    margin: 0;
+}
+
+figure.image-container figcaption {
+    margin-top: 0.6rem;
+    text-align: center;
+}
+
+/* ==============================
+   Responsive Design
+   ============================== */
+
+@media (max-width: 600px) {
+
+    header {
+        padding: 1rem;
+    }
+
+    nav {
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+
+    main {
+        padding: 2rem 1rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-content {
+        padding: 1rem 0;
+    }
+
+    .hero-content h1 {
+        font-size: 2.2rem;
+    }
+    .about-intro,
+    .about-section,
+    .hobby-section {
+    grid-template-columns: 1fr;
+    }
+
+    .about-intro img,
+    .about-section img,
+    .hobby-section img {
+    height: 350px;
+    }
+}
