@@ -1,8 +1,8 @@
 <!--
     Roxanne Buenaventura
-    September 20, 2026
+    October 3, 2026
     CSD 340
-    Assignment 7.2
+    Assignment 10.2
 -->
 
 <!DOCTYPE html>
@@ -15,13 +15,20 @@
     </head>
     <body>
 <!-- Navigation -->
-        <header>
+    <header>
+        <div class="header-container">
+            <div class="site-title">
+                <a href="index.html">Heather</a>
+                <span>Family • Home • Garden</span>
+            </div>
+
             <nav>
-                <a href="index.html">Home</a>
+                <a class="active" href="index.html" aria-current="page">Home</a>
                 <a href="about.html">About</a>
                 <a href="hobbies.html">Hobbies</a>
             </nav>
-        </header>
+        </div>
+    </header>
 <!-- Introduction -->
 <main>
 
@@ -71,39 +78,39 @@
         </p>
     </section>
 
+    <!-- Decorative Page Divider -->
+    <div class="section-divider" aria-hidden="true">
+        <span>❧</span>
+    </div>
 
-    <!-- Explore Section -->
+    <!-- Story Introduction -->
     <!--
-        Provides links to the two main content areas of the
-        bioSite: information about Heather and her hobbies.
+        Provides a personal introduction to Heather's story before
+        directing visitors to her hobbies and interests.
     -->
-    <section>
-        <h2>Explore</h2>
-
-        <!-- About Heather Card -->
+    <section class="story-intro">
         <div class="card">
-            <h3>About Heather</h3>
+            <h2>A Life Rooted in What Matters</h2>
 
             <p>
-                Learn more about Heather, her family, and the people and
-                experiences that are important to her.
+                Heather's story is shaped by family, creativity, growth, and a
+                strong connection to home. From creating beautiful outdoor spaces
+                to spending time with the people she loves, the things that matter
+                most to her can be found in the everyday moments she has built
+                around her.
             </p>
-
-            <a class="button" href="about.html">About Heather</a>
         </div>
 
-        <!-- Hobbies and Interests Card -->
         <div class="card">
-            <h3>Hobbies & Interests</h3>
+            <h2>Explore Her Interests</h2>
 
             <p>
-                Explore Heather's love of gardening, home design, the
-                outdoors, and other activities she enjoys.
+                Gardening, home projects, and time outdoors are a few of the
+                interests that have become meaningful parts of Heather's life.
             </p>
 
             <a class="button" href="hobbies.html">Explore Hobbies</a>
         </div>
-
     </section>
 
     <!-- Bottom Page Navigation -->
